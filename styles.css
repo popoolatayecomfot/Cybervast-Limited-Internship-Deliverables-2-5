@@ -1,0 +1,110 @@
+body{
+  font-family: Arial, sans-serif;
+  padding:20px;
+}
+
+.btn{
+  padding:10px 20px;
+  border:none;
+  border-radius:5px;
+  margin-right:10px;
+  cursor:pointer;
+}
+
+.primary{
+  background:#6a0dad;
+  color:white;
+}
+
+.secondary{
+  background:#ddd;
+}
+
+input,
+textarea,
+select{
+  display:block;
+  width:300px;
+  padding:10px;
+  margin:10px 0;
+}
+
+.badge{
+  padding:5px 10px;
+  border-radius:15px;
+  color:white;
+}
+
+.success{
+  background:green;
+}
+
+.warning{
+  background:orange;
+}
+
+.card{
+  border:1px solid #ddd;
+  padding:15px;
+  width:300px;
+  border-radius:8px;
+}
+
+.avatar{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:#6a0dad;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+}
+
+.sidebar{
+  width:200px;
+  background:#f4f4f4;
+  padding:10px;
+}
+
+.sidebar a{
+  display:block;
+  padding:10px;
+  text-decoration:none;
+  color:black;
+}
+
+.progress{
+  width:300px;
+  height:20px;
+  background:#ddd;
+  border-radius:10px;
+}
+
+.progress-fill{
+  width:70%;
+  height:100%;
+  background:#6a0dad;
+  border-radius:10px;
+}
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
