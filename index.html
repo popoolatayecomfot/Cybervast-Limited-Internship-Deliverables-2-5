@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CyberVast LMS Components</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>CyberVast LMS Component Library</h1>
+
+<h2>Button Component</h2>
+<button class="btn primary">Primary</button>
+<button class="btn secondary">Secondary</button>
+
+<h2>Input Component</h2>
+<input type="text" placeholder="Enter your name">
+
+<h2>Textarea Component</h2>
+<textarea placeholder="Write here"></textarea>
+
+<h2>Badge Component</h2>
+<span class="badge success">Success</span>
+<span class="badge warning">Warning</span>
+
+<h2>Card Component</h2>
+<div class="card">
+  <h3>Course Card</h3>
+  <p>This is a reusable card component.</p>
+</div>
+
+<h2>Avatar Component</h2>
+<div class="avatar">PT</div>
+
+<h2>Sidebar Component</h2>
+<div class="sidebar">
+  <a href="#">Dashboard</a>
+  <a href="#">Courses</a>
+  <a href="#">Profile</a>
+</div>
+
+<h2>Progress Bar</h2>
+<div class="progress">
+  <div class="progress-fill"></div>
+</div>
+
+<h2>Dropdown Component</h2>
+<select>
+  <option>Frontend</option>
+  <option>Backend</option>
+  <option>UI/UX</option>
+</select>
+
+</body>
+</html><!-- Modal Component -->
+<h2>Modal Component</h2>
+
+<button id="openModal" class="btn-primary">
+  Open Modal
+</button>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h3>Course Information</h3>
+    <p>This is a reusable modal component.</p>
+
+    <button id="closeModal" class="btn-secondary">
+      Close
+    </button>
+  </div>
+</div>
+
+<script>
+const modal = document.getElementById("modal");
+const openBtn = document.getElementById("openModal");
+const closeBtn = document.getElementById("closeModal");
+
+openBtn.onclick = () => {
+  modal.style.display = "flex";
+};
+
+closeBtn.onclick = () => {
+  modal.style.display = "none";
+};
+
+window.onclick = (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};
+</script>
